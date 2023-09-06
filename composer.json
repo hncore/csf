@@ -3,11 +3,6 @@
     "description": "Codestar Framework composer package",
     "type": "library",
     "license": "GPL-2.0",
-    "autoload": {
-        "psr-4": {
-            "BeycanPress\\": "classes"
-        }
-    },
     "author": "BeycanPress",
     "support": {
         "issues": "https://github.com/BeycanPress/csf/issues"

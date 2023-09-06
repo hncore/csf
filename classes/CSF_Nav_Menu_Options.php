@@ -1,4 +1,7 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php
+
+namespace BeycanPress;
+
 /**
  *
  * Nav Menu Options Class

@@ -1,4 +1,7 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php
+
+namespace BeycanPress;
+
 /**
  *
  * Options Class
@@ -59,7 +62,7 @@ if ( ! class_exists( 'CSF_Options' ) ) {
       'admin_bar_menu_priority' => 50,
 
       // footer
-      'footer_text'             => 'Thank you for creating with Codestar Framework',
+      'footer_text'             => 'Powered by BeycanPress',
       'footer_after'            => '',
       'footer_credit'           => '',
 

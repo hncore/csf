@@ -1,4 +1,7 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php
+
+namespace BeycanPress;
+
 /**
  *
  * Setup Class
@@ -385,23 +388,6 @@ if ( ! class_exists( 'CSF_Setup' ) ) {
       self::include_plugin_file( 'functions/helpers.php'  );
       self::include_plugin_file( 'functions/sanitize.php' );
       self::include_plugin_file( 'functions/validate.php' );
-
-      // Include free version classes
-      self::include_plugin_file( 'classes/abstract.class.php'      );
-      self::include_plugin_file( 'classes/fields.class.php'        );
-      self::include_plugin_file( 'classes/admin-options.class.php' );
-
-      // Include premium version classes
-      if ( self::$premium ) {
-        self::include_plugin_file( 'classes/customize-options.class.php' );
-        self::include_plugin_file( 'classes/metabox-options.class.php'   );
-        self::include_plugin_file( 'classes/nav-menu-options.class.php'  );
-        self::include_plugin_file( 'classes/profile-options.class.php'   );
-        self::include_plugin_file( 'classes/shortcode-options.class.php' );
-        self::include_plugin_file( 'classes/taxonomy-options.class.php'  );
-        self::include_plugin_file( 'classes/widget-options.class.php'    );
-        self::include_plugin_file( 'classes/comment-options.class.php'   );
-      }
 
       // Include all framework fields
       $fields = apply_filters( 'csf_fields', array(

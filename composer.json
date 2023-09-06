@@ -1,0 +1,16 @@
+{
+    "name": "beycanpress/csf",
+    "description": "Codestar Framework composer package",
+    "type": "library",
+    "license": "GPL-2.0",
+    "autoload": {
+        "psr-4": {
+            "Beycanpress\\": "classes/"
+        }
+    },
+    "author": "BeycanPress",
+    "support": {
+        "issues": "https://github.com/BeycanPress/http/issues"
+    },
+    "homepage": "https://github.com/BeycanPress/http"
+}

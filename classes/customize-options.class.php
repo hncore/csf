@@ -1,7 +1,4 @@
-<?php
-
-namespace BeycanPress;
-
+<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
 /**
  *
  * Customize Options Class

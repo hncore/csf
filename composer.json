@@ -5,12 +5,12 @@
     "license": "GPL-2.0",
     "autoload": {
         "psr-4": {
-            "Beycanpress\\": "classes/"
+            "BeycanPress\\": "classes"
         }
     },
     "author": "BeycanPress",
     "support": {
-        "issues": "https://github.com/BeycanPress/http/issues"
+        "issues": "https://github.com/BeycanPress/csf/issues"
     },
-    "homepage": "https://github.com/BeycanPress/http"
+    "homepage": "https://github.com/BeycanPress/csf"
 }

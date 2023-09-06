@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Beycanpress\\Csf\\' => array($baseDir . '/src'),
+    'BeycanPress\\' => array($baseDir . '/classes'),
 );

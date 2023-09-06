@@ -9,14 +9,14 @@ class ComposerStaticInit3f1fa0b36e27a896bfecb28f6ba68463
     public static $prefixLengthsPsr4 = array (
         'B' => 
         array (
-            'Beycanpress\\Csf\\' => 16,
+            'BeycanPress\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Beycanpress\\Csf\\' => 
+        'BeycanPress\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/classes',
         ),
     );
 

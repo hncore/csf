@@ -1,7 +1,4 @@
-<?php 
-
-namespace BeycanPress;
-
+<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
 /**
  *
  * Setup Class
@@ -796,15 +793,3 @@ if ( ! class_exists( 'CSF_Setup' ) ) {
 }
 
 CSF_Setup::init( __FILE__, true );
-
-/**
- *
- * Extended Setup Class for Shortland
- *
- * @since 1.0.0
- * @version 1.0.0
- *
- */
-if ( ! class_exists( 'CSF' ) ) {
-  class CSF extends CSF_Setup{}
-}

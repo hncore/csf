@@ -24,15 +24,23 @@ if ( ! class_exists( 'CSF_Field_sortable' ) ) {
       $pre_fields = array();
 
       // Add array-keys to defined fields for sort by
-      foreach ( $this->field['fields'] as $key => $field ) {
-        $pre_fields[$field['id']] = $field;
+      if (isset($this->field['fields'])) {
+        foreach ( $this->field['fields'] as $key => $field ) {
+          $pre_fields[$field['id']] = $field;
+        }
+      } else {
+        $messageExists = isset($this->field['no_fields_message']) && !empty($this->field['no_fields_message']);
+        $message = $messageExists ? esc_html($this->field['no_fields_message']) : esc_html__( 'Please define fields for sortable.', 'csf' );
+        echo '<p>'. $message .'</p>';
       }
 
       // Set sort by by saved-value or default-value
       if ( ! empty( $this->value ) ) {
 
         foreach ( $this->value as $key => $value ) {
-          $pre_sortby[$key] = $pre_fields[$key];
+          if (isset($pre_fields[$key])) {
+            $pre_sortby[$key] = $pre_fields[$key];
+          }
         }
 
         $diff = array_diff_key( $pre_fields, $this->value );

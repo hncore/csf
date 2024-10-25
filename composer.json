@@ -1,12 +1,17 @@
 {
-    "name": "beycanpress/csf",
+    "name": "hncore/csf",
     "description": "Codestar Framework composer package",
     "version": "2.4.0",
     "type": "library",
     "license": "GPL-2.0",
-    "author": "BeycanPress",
-    "support": {
-        "issues": "https://github.com/BeycanPress/csf/issues"
+    "autoload": {
+        "files": [
+            "vendor/hncore/csf/csf.php"
+        ]
     },
-    "homepage": "https://github.com/BeycanPress/csf"
+    "author": "HauN",
+    "support": {
+        "issues": "https://github.com/HNCore/csf/issues"
+    },
+    "homepage": "https://github.com/HNCore/csf"
 }
